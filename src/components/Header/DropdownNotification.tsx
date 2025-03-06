@@ -76,7 +76,7 @@ const DropdownNotification = () => {
         }`}
       >
         <div className="px-4.5 py-3">
-          <h5 className="text-sm font-medium text-bodydark2">Notification</h5>
+          <h5 className="text-sm font-medium text-bodydark2">通知</h5>
         </div>
 
         <ul className="flex h-auto flex-col overflow-y-auto">
@@ -87,13 +87,11 @@ const DropdownNotification = () => {
             >
               <p className="text-sm">
                 <span className="text-black dark:text-white">
-                  Edit your information in a swipe
-                </span>{' '}
-                Sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim.
+                  情報の簡単な編集...
+                </span>
               </p>
 
-              <p className="text-xs">12 May, 2025</p>
+              <p className="text-xs">2025年5月12日</p>
             </Link>
           </li>
           <li>
@@ -103,12 +101,11 @@ const DropdownNotification = () => {
             >
               <p className="text-sm">
                 <span className="text-black dark:text-white">
-                  It is a long established fact
-                </span>{' '}
-                that a reader will be distracted by the readable.
+                  システム更新のお知らせ...
+                </span>
               </p>
 
-              <p className="text-xs">24 Feb, 2025</p>
+              <p className="text-xs">2025年2月24日</p>
             </Link>
           </li>
           <li>
@@ -118,13 +115,11 @@ const DropdownNotification = () => {
             >
               <p className="text-sm">
                 <span className="text-black dark:text-white">
-                  There are many variations
-                </span>{' '}
-                of passages of Lorem Ipsum available, but the majority have
-                suffered
+                  メンテナンスのお知らせ...
+                </span>
               </p>
 
-              <p className="text-xs">04 Jan, 2025</p>
+              <p className="text-xs">2025年1月4日</p>
             </Link>
           </li>
           <li>
@@ -134,13 +129,11 @@ const DropdownNotification = () => {
             >
               <p className="text-sm">
                 <span className="text-black dark:text-white">
-                  There are many variations
-                </span>{' '}
-                of passages of Lorem Ipsum available, but the majority have
-                suffered
+                  重要なお知らせ...
+                </span>
               </p>
 
-              <p className="text-xs">01 Dec, 2024</p>
+              <p className="text-xs">2024年12月1日</p>
             </Link>
           </li>
         </ul>

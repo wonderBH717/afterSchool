@@ -448,7 +448,7 @@ const ScheduleInput: React.FC = () => {
   };
   return (
     <DefaultLayout>
-      <Breadcrumb pageName="Input Schedule" />
+      <Breadcrumb pageName="スケジュール入力" />
       <ScheduleTable
         scheduleData={scheduleData}
         onScheduleChange={handleScheduleChange}

@@ -37,29 +37,12 @@ const ScheduleTable: React.FC<ScheduleTableProps> = ({
     };
     onScheduleChange(newScheduleData);
   };
-  const validateTimeFormat = (value: string): string => {
-    if (!value) return '';
-    const timeRegex = /^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$/;
-    return timeRegex.test(value) ? value : '';
-  };
   const handleTimeChange = (
     index: number,
     field: keyof ScheduleEntry,
     value: string
   ) => {
-    if (
-      typeof scheduleData[index][field] === 'string' &&
-      scheduleData[index][field].length == 1 &&
-      value.length == 2
-    ) {
-      value += ':';
-    }
-    const formattedValue = value.replace(/[^\d:]/g, '');
-    if (formattedValue.length <= 5) {
-      if (formattedValue.length == 5 && !validateTimeFormat(formattedValue))
-        return;
-      handleInputChange(index, field, formattedValue);
-    }
+    handleInputChange(index, field, value);
   };
   return (
     <div className="overflow-x-auto rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
@@ -150,7 +133,7 @@ const ScheduleTable: React.FC<ScheduleTableProps> = ({
               <div className="col-span-4 grid grid-cols-4 border-l border-r border-stroke dark:border-strokedark">
                 <div className="col-span-2 flex items-center gap-2 p-2.5">
                   <input
-                    type="text"
+                    type="time"
                     value={entry.plannedStart}
                     onChange={(e) =>
                       handleTimeChange(index, 'plannedStart', e.target.value)
@@ -159,7 +142,7 @@ const ScheduleTable: React.FC<ScheduleTableProps> = ({
                   />
                   <span>-</span>
                   <input
-                    type="text"
+                    type="time"
                     value={entry.plannedEnd}
                     onChange={(e) =>
                       handleTimeChange(index, 'plannedEnd', e.target.value)
@@ -215,7 +198,7 @@ const ScheduleTable: React.FC<ScheduleTableProps> = ({
               <div className="col-span-4 grid grid-cols-4 border-l border-r border-stroke dark:border-strokedark">
                 <div className="col-span-2 flex gap-2 p-2.5">
                   <input
-                    type="text"
+                    type="time"
                     value={entry.actualStart}
                     onChange={(e) =>
                       handleTimeChange(index, 'actualStart', e.target.value)
@@ -224,7 +207,7 @@ const ScheduleTable: React.FC<ScheduleTableProps> = ({
                   />
                   <span>-</span>
                   <input
-                    type="text"
+                    type="time"
                     value={entry.actualEnd}
                     onChange={(e) =>
                       handleTimeChange(index, 'actualEnd', e.target.value)

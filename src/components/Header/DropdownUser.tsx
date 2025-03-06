@@ -45,13 +45,13 @@ const DropdownUser = () => {
       >
         <span className="hidden text-right lg:block">
           <span className="block text-sm font-medium text-black dark:text-white">
-            Thomas Anree
+            田中
           </span>
-          <span className="block text-xs">UX Designer</span>
+          <span className="block text-xs">UX デザイナー</span>
         </span>
 
-        <span className="h-12 w-12 rounded-full">
-          <img src={UserOne} alt="User" />
+        <span className="h-12 w-12 overflow-hidden">
+          <img src={UserOne} className=" rounded-full" alt="User" />
         </span>
 
         <svg
@@ -103,7 +103,7 @@ const DropdownUser = () => {
                   fill=""
                 />
               </svg>
-              My Profile
+              プロフィール
             </Link>
           </li>
           <li>
@@ -124,7 +124,7 @@ const DropdownUser = () => {
                   fill=""
                 />
               </svg>
-              My Contacts
+              連絡先
             </Link>
           </li>
           <li>
@@ -149,7 +149,7 @@ const DropdownUser = () => {
                   fill=""
                 />
               </svg>
-              Account Settings
+              設定
             </Link>
           </li>
         </ul>
@@ -171,7 +171,7 @@ const DropdownUser = () => {
               fill=""
             />
           </svg>
-          Log Out
+          ログアウト
         </button>
       </div>
       {/* <!-- Dropdown End --> */}
