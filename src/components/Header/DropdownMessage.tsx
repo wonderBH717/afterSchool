@@ -51,7 +51,7 @@ const DropdownMessage = () => {
         to="#"
       >
         <span
-          className={`absolute -top-0.5 -right-0.5 z-1 h-2 w-2 rounded-full bg-meta-1 ${
+          className={`absolute -right-0.5 -top-0.5 z-1 h-2 w-2 rounded-full bg-meta-1 ${
             notifying === false ? 'hidden' : 'inline'
           }`}
         >
@@ -95,7 +95,7 @@ const DropdownMessage = () => {
         }`}
       >
         <div className="px-4.5 py-3">
-          <h5 className="text-sm font-medium text-bodydark2">Messages</h5>
+          <h5 className="text-sm font-medium text-bodydark2">メッセージ</h5>
         </div>
 
         <ul className="flex h-auto flex-col overflow-y-auto">
@@ -104,16 +104,16 @@ const DropdownMessage = () => {
               className="flex gap-4.5 border-t border-stroke px-4.5 py-3 hover:bg-gray-2 dark:border-strokedark dark:hover:bg-meta-4"
               to="/messages"
             >
-              <div className="h-12.5 w-12.5 rounded-full">
-                <img src={UserTwo} alt="User" />
+              <div className="h-12.5 w-12.5 min-w-12.5 overflow-hidden rounded-full">
+                <img src={UserTwo} alt="ユーザー" className="h-full w-full" />
               </div>
 
               <div>
                 <h6 className="text-sm font-medium text-black dark:text-white">
-                  Mariya Desoja
+                  田中 美咲
                 </h6>
-                <p className="text-sm">I like your confidence 💪</p>
-                <p className="text-xs">2min ago</p>
+                <p className="text-sm">自信に満ちた姿勢が素晴らしいですね 💪</p>
+                <p className="text-xs">2分前</p>
               </div>
             </Link>
           </li>
@@ -122,16 +122,16 @@ const DropdownMessage = () => {
               className="flex gap-4.5 border-t border-stroke px-4.5 py-3 hover:bg-gray-2 dark:border-strokedark dark:hover:bg-meta-4"
               to="/messages"
             >
-              <div className="h-12.5 w-12.5 rounded-full">
-                <img src={UserOne} alt="User" />
+              <div className="h-12.5 w-12.5 min-w-12.5 overflow-hidden rounded-full">
+                <img src={UserOne} alt="ユーザー" className="h-full w-full" />
               </div>
 
               <div>
                 <h6 className="text-sm font-medium text-black dark:text-white">
-                  Robert Jhon
+                  佐藤 健一
                 </h6>
-                <p className="text-sm">Can you share your offer?</p>
-                <p className="text-xs">10min ago</p>
+                <p className="text-sm">提案内容を共有していただけますか？</p>
+                <p className="text-xs">10分前</p>
               </div>
             </Link>
           </li>
@@ -140,16 +140,16 @@ const DropdownMessage = () => {
               className="flex gap-4.5 border-t border-stroke px-4.5 py-3 hover:bg-gray-2 dark:border-strokedark dark:hover:bg-meta-4"
               to="/messages"
             >
-              <div className="h-12.5 w-12.5 rounded-full">
-                <img src={UserThree} alt="User" />
+              <div className="h-12.5 w-12.5 min-w-12.5 overflow-hidden rounded-full">
+                <img src={UserThree} alt="ユーザー" className="h-full w-full" />
               </div>
 
               <div>
                 <h6 className="text-sm font-medium text-black dark:text-white">
-                  Henry Dholi
+                  山田 太郎
                 </h6>
-                <p className="text-sm">I cam across your profile and...</p>
-                <p className="text-xs">1day ago</p>
+                <p className="text-sm">プロフィールを拝見しまして...</p>
+                <p className="text-xs">1日前</p>
               </div>
             </Link>
           </li>
@@ -158,16 +158,16 @@ const DropdownMessage = () => {
               className="flex gap-4.5 border-t border-stroke px-4.5 py-3 hover:bg-gray-2 dark:border-strokedark dark:hover:bg-meta-4"
               to="/messages"
             >
-              <div className="h-12.5 w-12.5 rounded-full">
-                <img src={UserFour} alt="User" />
+              <div className="h-12.5 w-12.5 min-w-12.5 overflow-hidden rounded-full">
+                <img src={UserFour} alt="ユーザー" className="h-full w-full" />
               </div>
 
               <div>
                 <h6 className="text-sm font-medium text-black dark:text-white">
-                  Cody Fisher
+                  鈴木 花子
                 </h6>
-                <p className="text-sm">I’m waiting for you response!</p>
-                <p className="text-xs">5days ago</p>
+                <p className="text-sm">ご返信お待ちしております！</p>
+                <p className="text-xs">5日前</p>
               </div>
             </Link>
           </li>
@@ -176,16 +176,16 @@ const DropdownMessage = () => {
               className="flex gap-4.5 border-t border-stroke px-4.5 py-3 hover:bg-gray-2 dark:border-strokedark dark:hover:bg-meta-4"
               to="/messages"
             >
-              <div className="h-12.5 w-12.5 rounded-full">
-                <img src={UserTwo} alt="User" />
+              <div className="h-12.5 w-12.5 min-w-12.5 overflow-hidden rounded-full">
+                <img src={UserTwo} alt="ユーザー" className="h-full w-full" />
               </div>
 
               <div>
                 <h6 className="text-sm font-medium text-black dark:text-white">
-                  Mariya Desoja
+                  田中 美咲
                 </h6>
-                <p className="text-sm">I like your confidence 💪</p>
-                <p className="text-xs">2min ago</p>
+                <p className="text-sm">自信に満ちた姿勢が素晴らしいですね 💪</p>
+                <p className="text-xs">2分前</p>
               </div>
             </Link>
           </li>

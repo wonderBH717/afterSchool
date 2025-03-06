@@ -60,7 +60,8 @@ import ComingSoon from './pages/Authentication/ComingSoon';
 import TwoStepVerification from './pages/Authentication/TwoStepVerification';
 import UnderMaintenance from './pages/Authentication/UnderMaintenance';
 import LandingPage from './pages/Pages/LandingPage';
-
+import ScheduleInput from './pages/Schedule/ScheduleInput';
+import ScheduleStats from './pages/Schedule/ScheduleStatistics';
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -202,6 +203,24 @@ function App() {
             <>
               <PageTitle title="Pro Form Layout | TailAdmin - Tailwind CSS Admin Dashboard Template" />
               <ProFormLayout />
+            </>
+          }
+        />
+        <Route
+          path="/schedule/input"
+          element={
+            <>
+              <PageTitle title="Schedule Input" />
+              <ScheduleInput />
+            </>
+          }
+        />
+        <Route
+          path="/schedule/stats"
+          element={
+            <>
+              <PageTitle title="Schedule Input" />
+              <ScheduleStats />
             </>
           }
         />
